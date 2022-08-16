@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  flex: 20%;
+  /* border: 1px solid red; */
+  text-align: left;
+  margin-left: 10%;
+}
+
+.logo h1 {
+  font-size: 34px;
+}
+
+.menu {
+  flex: 70%;
+  /*border: 1px solid green;*/
+  text-align: right;
+  padding: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 16px;
+}
+
+.menu a:hover {
+  color: rgb(156, 26, 48);
+  border-top: 4px solid blue;
+}
+
+#botao {
+  background-color: blue;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+#botao:hover {
+  border: none;
+  background-color: rgb(156, 26, 48);
+}
+
+.header {
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.headline {
+  flex: 40%;
+  margin-left: 10%;
+  /*border: 1px solid lightblue;*/
+}
+
+.headline h2 {
+  font-weight: 900;
+  font-size: 20px;
+  color: blue;
+  padding: 0;
+  margin: 0;
+}
+
+.headline p {
+  color: gray;
+  text-align: left;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: rgb(156, 26, 48);
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background-color: blue;
+}
+
+.img-headline {
+  margin-right: 10%;
+  flex: 40%;
+  /*border: 1px solid pink;*/
+  text-align: center;
+}
+
+section {
+  margin-top: 80px;
+  /*border: 1px solid black;*/
+  margin-left: 5%;
+  margin-right: 5%;
+  /*height: 400px;*/
+  display: inline-block;
+  padding: 5%;
+  text-align: center;
+  /* width: 90%;*/
+}
+
+section h2 {
+  width: 100%;
+  font-size: 50px;
+  margin: 0;
+  font-weight: bold;
+  color: blue;
+}
+
+.service {
+  margin-top: 5%;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  width: 30%;
+  margin: 1%;
+  border: 1px solid pink;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: lightblue;
+  color: white;
+  padding: 40px;
+}
+
+.card:hover img {
+  display: none;
+}
+
+footer {
+  margin-top: 100px;
+  height: 400px;
+  background-image: linear-gradient(180deg, #180f4a, #090422, black);
+  text-align: center;
+  border-top: 5px solid pink;
+}
+
+.logo-rodape {
+  padding: 100px;
+}
+
+.agencia {
+  color: white;
+  font-size: 34px;
+}
+
+.whats {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 10%;
+}
+
+@media screen and (max-width: 885px) {
+  .navbar {
+    position: relative;
+  }
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+    text-align: center;
+  }
+  .header {
+    padding-top: 50px;
+  }
+
+  .headline {
+    flex: 100%;
+    margin: 5%;
+    text-align: center;
+  }
+  .headeline p {
+    text-align: center;
+  }
+  .img-headline {
+    flex: 100%;
+    margin: 5%;
+    text-align: center;
+  }
+  .whats {
+    display: none;
+  }
+
+  .service {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 70%;
+  }
+}
